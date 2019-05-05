@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{203D7338-D174-486B-8F60-EC414E9D6691}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>mpdenme</RootNamespace>
+    <AssemblyName>mpdenme</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX.AudioVideoPlayback, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\Microsoft.DirectX.AudioVideoPlayback.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="png\164588855-notorious-big-wallpapers.jpg" />
+    <Content Include="png\288875-Trap_Nation-748x421.jpg" />
+    <Content Include="png\647128-2pac-wallpapers-1920x1080-smartphone.jpg" />
+    <Content Include="png\album.png" />
+    <Content Include="png\archive.png" />
+    <Content Include="png\backward.png" />
+    <Content Include="png\bluetooth.png" />
+    <Content Include="png\closed.png" />
+    <Content Include="png\crotchet.png" />
+    <Content Include="png\demisemiquaver.png" />
+    <Content Include="png\eject-1.png" />
+    <Content Include="png\eject-2.png" />
+    <Content Include="png\eject.png" />
+    <Content Include="png\fast-forward-1.png" />
+    <Content Include="png\fast-forward-2.png" />
+    <Content Include="png\fast-forward.png" />
+    <Content Include="png\folder.png" />
+    <Content Include="png\glossy_player_keys_wallpaper_by_smoinuddin1110.jpg" />
+    <Content Include="png\gT6c2d.jpg" />
+    <Content Include="png\hemidemisemiquaver.png" />
+    <Content Include="png\maximize.png" />
+    <Content Include="png\microphone.png" />
+    <Content Include="png\minim.png" />
+    <Content Include="png\minimize.png" />
+    <Content Include="png\music-player-1.png" />
+    <Content Include="png\music-player.png" />
+    <Content Include="png\nfc.png" />
+    <Content Include="png\pause-1.png" />
+    <Content Include="png\pause-2.png" />
+    <Content Include="png\pause.png" />
+    <Content Include="png\play-1.png" />
+    <Content Include="png\play-2.png" />
+    <Content Include="png\play.png" />
+    <Content Include="png\previous-1.png" />
+    <Content Include="png\previous-2.png" />
+    <Content Include="png\previous.png" />
+    <Content Include="png\radio.png" />
+    <Content Include="png\rec-1.png" />
+    <Content Include="png\rec-2.png" />
+    <Content Include="png\rec.png" />
+    <Content Include="png\rewind-1.png" />
+    <Content Include="png\rewind.png" />
+    <Content Include="png\semibreve.png" />
+    <Content Include="png\semiquaver.png" />
+    <Content Include="png\skip-1.png" />
+    <Content Include="png\skip-2.png" />
+    <Content Include="png\skip.png" />
+    <Content Include="png\stop-1.png" />
+    <Content Include="png\stop-2.png" />
+    <Content Include="png\stop.png" />
+    <Content Include="png\tv.png" />
+    <Content Include="png\usb.png" />
+    <Content Include="png\video-player.png" />
+    <Content Include="png\wifi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

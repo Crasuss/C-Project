@@ -1,0 +1,18 @@
+open playlist
+add playlist
+minimize
+hide media player
+shoe media player
+show media player again
+play
+fast forward
+fast reverse
+resume
+resume
+pause
+previous
+next
+mute
+volume up
+close media player
+exit full screen
