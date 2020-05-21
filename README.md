@@ -1,2 +1,2 @@
 # C-Project
-##Media player that works using voice commands
+Media player that works using voice commands
